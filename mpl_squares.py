@@ -1,8 +1,11 @@
 import matplotlib.pyplot as plt
 
+input_values = [1, 2, 3, 4, 5]
 squeres = [1, 4, 9, 16, 25]
+
+plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(squeres, linewidth=3)
+ax.plot(input_values, squeres, linewidth=3)
 
 ax.set_title("Kwadraty liczb", fontsize=24)
 ax.set_xlabel("Wartość", fontsize=14)
