@@ -14,5 +14,5 @@ ax.set_ylabel("Kwadraty wartości", fontsize=14)
 ax.axis([0, 1100, 0, 1100000])
 ax.tick_params(axis='both', which='major', labelsize=14)
 
-#plt.show()
+plt.show()
 #plt.savefig('test.png', bbox_inches='tight')
