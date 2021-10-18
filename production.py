@@ -12,9 +12,13 @@ report_hour = df['Report Hour']
 kits_completed = df['Kits Completed']
 
 """Zamienia dane na lista w liście"""
-#df = df.to_dict('records')
-for column_name, item in df.iteritems():
-    print(column_name)
+df = df.to_dict('records')
+
+df = pd.DataFrame(df)
+table = df.pivot(index='Report Hour', columns='Line Number', values = 'Kits Completed')
+table.plot.bar()
+plt.show()
+
 
 #lists = df.values
 #print(df[df['Kits Completed'] != 0])
