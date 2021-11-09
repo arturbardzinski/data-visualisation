@@ -6,6 +6,9 @@ import json
 df = pd.read_csv("matrix.csv", sep=",")
 #df = df.set_index("Report Date")
 df = df[['Line Number', 'Report Hour', 'Kits Completed']]
+line11 = df[df['Line Number'] == 11]
+line12 = df[df['Line Number'] == 12]
+line15 = df[df['Line Number'] == 15]
 
 line_number = df['Line Number']
 report_hour = df['Report Hour']
